@@ -22,4 +22,4 @@ const todoschema=new mongoose.Schema({
     }
 })
 
-model.exports=mongoose.model("Todo",todoschema);
+module.exports=mongoose.model("Todo",todoschema);

@@ -5,4 +5,4 @@ const dbconnect=()=>{
     .then(() => { console.log('Connection successful') })
     .catch((error) => { console.log('received an error') });
 }
-model.exports=dbconnect;
+module.exports=dbconnect;
