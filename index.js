@@ -8,8 +8,8 @@ app.use(express.json());
 
 const todoRoutes=require("./routes/todos");
 
-// mount todo aspi route
-app.use("api/v1",todoRoutes)
+// mount todo api route
+app.use("/api/v1",todoRoutes)
 
 app.listen(PORT,()=>{
     console.log(`server started ${PORT}`)

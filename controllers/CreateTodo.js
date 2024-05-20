@@ -2,8 +2,8 @@ const Todo = require("../models/Todo");
 
 exports.createTodo = async (req, res) => {
     try {
-        const { title, description } = req.body;
-        const response = await Todo.create({ title, description });
+        const { Title, description } = req.body;
+        const response = await Todo.create({ Title, description });
         res.status(200).json({
             success: true,
             data: response,
